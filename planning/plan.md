@@ -1,23 +1,23 @@
 # PLAN
 
 ## MVP
-**around 1.5 hour**
+**planning and set up**
 - Take a look at the API ✅
 - Copy & Paste some canned data ✅
 - Market Research ✅
 - Create Low-Res Wire Frames ✅
 - Create Component Tree ✅
 - Create React App with TypeScript & set up folders and files ✅
-**around 2 hours** 
-- Code fetch hook & write tests
-- Code article card component & write tests
-- Code search bar component & write tests
+**main coding** 
+- Code article card component ✅
+- Code search bar component ✅
 - Code back button
 - Code article page
-**around 2 hours** 
+**CSS and documentation** 
 - Create High-Res Wire Frames
 - CSS it!
 - Cypress test
+- deploy with Vercel
 - check code is fully commented
 - README.md
 

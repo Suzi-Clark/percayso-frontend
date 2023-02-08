@@ -1,1 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
+:root{
+    --blue: #156c52;
+    --grey: #e1ebd4;
+    --white: #fff;
+  }
+
+*{
+    font-family: 'Montserrat', sans-serif;
+  }
+
+h1 {
+  color: var(--blue);
+  font-size: 36pt;
+  margin: 2vh 2vw 2vh 2vw;
+}
+
+body {
+    background-color: var(--grey);
+    margin: 1vh 1vw;
+}
+
+.cards-div {
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.card {
+    border-radius: 8px;
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    /* flex: 0 0 33.333333%; */
+    justify-content: space-around;
+    margin: 2vh 2vw 0vh 2vw;
+    padding: 1vh 1vw;
+    background-color: var(--white);
+    flex-grow: 1;
+    width: 350px;
+}
+
+.read-more {
+    align-self: flex-end;
+}
+
+.search-bar {
+    margin: 2vh 2vw 0vh 2vw;
+}
+
+
+.search-input {
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 14px 20px;
+}
+
+
+.search-button {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.search-button:hover {
+  background-color: #1e8449;
+  opacity: 1;
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}

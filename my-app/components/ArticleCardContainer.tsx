@@ -1,10 +1,14 @@
 import ArticleCard from "./ArticleCard";
-import data from "../../Data/generalData.json";
+import {dataType} from "../types";
 
-export default function ArticleCardContainer() {
-    let articles = data.articles;
+type propsType = {
+ results: dataType
+}
+
+export default function ArticleCardContainer({results}: propsType) {
+    let articles = results.articles;
     return(
-        <div>
+        <div className="cards-div">
            {articles.map((article, index) => <ArticleCard heading={article.title} description={article.description} dateStamp={article.publishedAt} key={index}/>)}
         </div>
     )

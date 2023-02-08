@@ -7,10 +7,10 @@ export default function SearchBar({onClick, onChange}: SearchProps) {
 
 
     return(
-        <div>
-           <input type="text" placeholder="Search" onChange={onChange}></input>
-          <button onClick={onClick}>
-            <span>Search</span>
+        <div className="search-bar">
+           <input className="search-input" type="text" placeholder="Keyword Search" onChange={onChange}></input>
+          <button className="search-button" onClick={onClick}>
+            <span>Go</span>
           </button>
         </div>
     )
