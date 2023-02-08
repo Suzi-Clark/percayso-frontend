@@ -31,9 +31,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <img className="logo" src='/SN.png' alt="logo"></img>
         <h1>Suzi&apos;s News Website</h1>
-        <p>{searchTerm}</p>
         <SearchBar onClick={() => setSearchTerm(userInput)} onChange={(e) => setUserInput(e.target.value)}/>
+        {searchTerm ? <h3>Results related to {searchTerm}:</h3>: <h3>Trending Articles:</h3>}
         {results ? <ArticleCardContainer results={results}/> : <p>Loading...</p>}
       </main>
     </>

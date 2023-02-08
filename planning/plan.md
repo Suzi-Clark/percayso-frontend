@@ -11,11 +11,8 @@
 **main coding** 
 - Code article card component ✅
 - Code search bar component ✅
-- Code back button
-- Code article page
 **CSS and documentation** 
-- Create High-Res Wire Frames
-- CSS it!
+- CSS it! ✅
 - Cypress test
 - deploy with Vercel
 - check code is fully commented
