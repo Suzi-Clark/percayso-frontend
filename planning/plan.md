@@ -20,3 +20,6 @@
 - Cypress test
 - check code is fully commented
 - README.md
+
+**stretch goal**
+- protect API key with .env

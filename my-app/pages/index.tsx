@@ -1,10 +1,19 @@
 import Head from 'next/head'
-import { Inter } from '@next/font/google'
-import ArticleCard from '@/components/ArticleCard'
+import ArticleCardContainer from '@/components/ArticleCardContainer'
+import SearchBar from '@/components/SearchBar'
+import useFetch from "../hooks/useFetch";
+import { useState, useEffect } from 'react';
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  //const [data, handleSearch] = useFetch(`https://gnews.io/api/v4/top-headlines?category=general&apikey=48513d43e581f6759ef7e91be18f4bf3`)
+  const [searchTerm, setSearchTerm] = useState('')
+  const [userInput, setUserInput] = useState('')
+
+  // useEffect(() => {
+  //   handleSearch(`https://gnews.io/api/v4/search?q=${}&lang=en&max=2&apikey=48513d43e581f6759ef7e91be18f4bf3`);
+  // }, [])
+
   return (
     <>
       <Head>
@@ -15,7 +24,8 @@ export default function Home() {
       </Head>
       <main>
         <h1>Suzi&apos;s News Website</h1>
-            <ArticleCard/>
+        <SearchBar onClick={() => setSearchTerm(userInput)} onChange={(e) => setUserInput(e.target.value)}/>
+        <ArticleCardContainer/>
       </main>
     </>
   )
