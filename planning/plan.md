@@ -13,10 +13,9 @@
 - Code search bar component ✅
 **CSS and documentation** 
 - CSS it! ✅
-- Cypress test
-- deploy with Vercel
-- check code is fully commented
-- README.md
+- Cypress test ✅
+- deploy with Vercel ✅
+- README.md ✅
 
 **stretch goal**
-- protect API key with .env
+- protect API key with .env 
